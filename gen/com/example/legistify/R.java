@@ -25,6 +25,7 @@ public final class R {
         public static final int p13=0x7f020001;
         public static final int pl1=0x7f020002;
         public static final int pl2=0x7f020003;
+        public static final int splash=0x7f020004;
     }
     public static final class id {
         public static final int action_settings=0x7f080019;
@@ -59,6 +60,7 @@ public final class R {
         public static final int contact_entry=0x7f030001;
         public static final int filter=0x7f030002;
         public static final int popup=0x7f030003;
+        public static final int splash=0x7f030004;
     }
     public static final class menu {
         public static final int main=0x7f070000;

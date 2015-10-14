@@ -113,7 +113,6 @@ public class MainActivity extends Activity implements OnItemClickListener, OnCli
 			String interest = data.getStringExtra("Interest");
 			String city = data.getStringExtra("City");
 			String area = data.getStringExtra("Area");
-			//Toast.makeText(this, interest + " " + city + " " + area , Toast.LENGTH_SHORT).show() ;
 			
 			contacts = db.getCustomizedContacts(interest, city , area);
 			MyAdapter adp = new MyAdapter(MainActivity.this , contacts);
