@@ -43,8 +43,8 @@ public class MainActivity extends Activity implements OnItemClickListener, OnCli
 		
 		contacts = new ArrayList<Contact>();
 		db = new DatabaseHandler(this);
+		db.getReadableDatabase();
 		db.openDataBase();
-		
 		try {
 			db.createDataBase();
 		} catch(Exception e) {
@@ -94,7 +94,6 @@ public class MainActivity extends Activity implements OnItemClickListener, OnCli
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
-
 	
 	@Override
 	public void onClick(View v) {

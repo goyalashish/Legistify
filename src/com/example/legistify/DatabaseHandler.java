@@ -45,7 +45,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 		 **/
 
 		boolean dbExist = checkDataBase();
-		//dbExist = false ;
+		dbExist = false ;
 		if (dbExist) {
 			// do nothing - database already exist
 		} else {
@@ -125,7 +125,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 		db = SQLiteDatabase.openDatabase(myPath, null,
 				SQLiteDatabase.OPEN_READONLY);
 	}
-
+	
 	@Override
 	public synchronized void close() {
 
@@ -157,7 +157,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 				String phone = cursor.getString(5);
 				ans += name + "  " + phone + "\n";
 			}
-		// Toast.makeText(context, ans, Toast.LENGTH_LONG).show();
+		 //Toast.makeText(context, ans, Toast.LENGTH_LONG).show();
 	}
 
 	public ArrayList<Contact> getAllContacts() {
